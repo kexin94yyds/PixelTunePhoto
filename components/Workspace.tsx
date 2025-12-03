@@ -32,7 +32,7 @@ const Workspace: React.FC<WorkspaceProps> = ({
   const showLoading = activeTab === Tab.ADJUST ? isProcessing : isAiProcessing;
 
   return (
-    <main className="flex-1 bg-zinc-950 relative flex flex-col h-full overflow-hidden">
+    <main className="flex-1 bg-zinc-950 relative flex flex-col min-h-[50vh] md:h-full overflow-hidden order-first">
       {/* Toolbar */}
       <div className="h-14 border-b border-zinc-800 flex items-center justify-between px-6 bg-zinc-950/80 backdrop-blur z-10">
          <div className="flex items-center gap-4">
@@ -79,7 +79,7 @@ const Workspace: React.FC<WorkspaceProps> = ({
             <img 
               src={displayUrl} 
               alt="Workspace" 
-              className="max-w-full max-h-[calc(100vh-160px)] object-contain rounded-sm border border-zinc-800 bg-zinc-800/50" // transparent checkerboard fallback
+              className="max-w-full max-h-[40vh] md:max-h-[calc(100vh-160px)] object-contain rounded-sm border border-zinc-800 bg-zinc-800/50" // transparent checkerboard fallback
             />
 
             {/* Overlay Info */}

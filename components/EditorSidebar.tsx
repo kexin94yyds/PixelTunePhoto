@@ -66,7 +66,7 @@ const EditorSidebar: React.FC<EditorSidebarProps> = ({
   };
 
   return (
-    <aside className="w-full md:w-80 bg-zinc-900 border-r border-zinc-800 flex flex-col h-full overflow-y-auto">
+    <aside className="w-full md:w-80 bg-zinc-900 border-t md:border-t-0 md:border-r border-zinc-800 flex flex-col h-[50vh] md:h-full overflow-y-auto shrink-0">
       {/* Tabs */}
       <div className="flex border-b border-zinc-800">
         <button
